@@ -1,0 +1,67 @@
+@import "assets/styles/mixins.scss";
+@import "assets/styles/variables.scss";
+
+.product {
+  background-color: $white;
+  border-radius: 4px;
+  color: $dark-grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px;
+
+  &__image,
+  &__description {
+    flex: 0 0 70%;
+  }
+
+  &__image {
+    @include center-image;
+  }
+
+  &__info {
+    flex: 0 0 25%;
+
+    &__basic {
+      font-size: 14px;
+      margin: 0 0 16px 0;
+
+      .condition:after {
+        content: "-";
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__price {
+    font-size: 46px;
+    font-weight: 400;
+    margin: 32px 0;
+  }
+
+  &__buy {
+    border: 0;
+    border-radius: 4px;
+    background-color: $primary-blue;
+    color: $white;
+    padding: 12px 0;
+    width: 90%;
+  }
+
+  &__description {
+    color: $secondary-grey;
+    font-size: 16px;
+    margin-top: 60px;
+
+    .title {
+      color: $dark-grey;
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "assets/styles/mixins.scss";
+@import "assets/styles/variables.scss";
+
+.searchbar {
+  background-color: $white;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+
+  &__input {
+    border: 0;
+    box-shadow: none;
+    font-family: 18px;
+    display: inline-block;
+    outline: 0;
+    padding: 8px;
+    width: 95%;
+  }
+
+  &__button {
+    @include icon-button-bg("../../assets/images/ic_search.png");
+    background-color: $light-grey;
+    float: right;
+    margin: 0;
+    padding: 10px;
+    height: 36px;
+    width: 36px;
+  }
+}

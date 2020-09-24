@@ -1,0 +1,18 @@
+@mixin icon-button-bg($url) {
+  appearance: none;
+  border: none;
+  background-image: url($url);
+  background-position: center;
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+
+@mixin center-image {
+  img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
